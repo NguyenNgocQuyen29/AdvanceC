@@ -58,3 +58,4 @@ Muốn sử dụng calloc hay malloc thì tùy vào người dùng nếu không 
 #### - **Stack**:
 -  Khác với Heap thì Stack là một vùng nhớ được cấp phát tự động 
 - Mỗi khi các function được gọi thì nó sẽ được push vào vùng stack.
+## **LESSION 5: EXTERN - STATIC - VOLATILE - REGISTER**
