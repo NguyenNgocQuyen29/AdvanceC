@@ -16,7 +16,9 @@ Below is the place to store about C/C++ programming language that I learned.
 > - Stack.
 
  Diagram
-![alt text](image.png)
+ 
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/afd40e65-9551-4a53-a6f3-58ae27f644fa)
+
 #### - **Text Segment**: 
 - Sau khi **compile** chương trình thì chúng ta sẽ có những file nhị phân (những file mà được dùng để execute chương trình của chúng ta khi đổ vào RAM), những file nhị phân (.o) này chứa những cái **instructions**. Và những cái instructions này sẽ stored ở Text Segment of the memory.  
 - Text Segment chỉ được read không được modify.
@@ -25,7 +27,8 @@ Below is the place to store about C/C++ programming language that I learned.
 - Được phép đọc - ghi (vì các value của variables sẽ thay đổi trong khi thực thi chương trình nó không mãi là một constant được nên phải có thể được modify).
 - Ví dụ: dưới đây mình khai báo 2 biến , biến **c** được khái báo có giá trị nên nó sẽ nằm trong vùng **data segment** của memory, còn biến **a** sẽ không nằm trong vùng data mà sẽ nằm ở vùng khác.
 
-    ![alt text](image-1.png)
+   ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/9df292be-e1d7-4245-aa67-70c6256c496b)
+
 #### - **Uninitialized Data**:
 - Uninitialized Data(BSS): chứa những biến chưa khởi tạo giá trị, và cũng có thể chứa nhưng biến static or global mà được khởi tạo với giá trị là 0.
 - Cho phép đọc và ghi.
