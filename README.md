@@ -36,4 +36,25 @@ Below is the place to store about C/C++ programming language that I learned.
 
 > *Một kiểu dữ liệu thì sẽ không nằm trong vùng nào hết, khi nó khai báo biến thì biến đó mới được lưu trong vùng data (initialized or uninitialized) tùy thuộc vào giá trị mà biến đó được khai báo.*
 #### - **Heap**:
+- Dùng cho bộ nhớ để cấp phát động( trong thời gian chạy chương trình).
+- Có thể điều khiển quá trình cấp phát hoặc giải phóng bộ nhớ bằng các câu lệnh như **malloc, calloc, relloc. free, delete,**...
+- Khi dùng xong thì phải delete nếu không sẽ bị leak memory.
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/659d19b0-b7c7-470c-8cc8-ceeaf96db913)
+- Malloc & Calloc: 
+>- Malloc: void * malloc(size_t size);
+>- Mục đích: cấp phát một vùng nhớ có kích thước là **size**.
+>- Tham số truyền vào: **1**
+>- Kết quả trả về: là một con trỏ tới vùng nhớ được cấp phát nếu success, NULL nếu fail.
+>- Giá trị khởi tạo: là giá trị rác.
+
+>- Calloc: void * calloc(size_t num, size_t size);
+>- Mục đích: cấp phát một vùng nhớ có chứa **num** phần tử, mỗi phần tử có kích thước là **size**.
+>- Tham số truyền vào: **2**
+>- Kết quả trả về: là một con trỏ tới vùng nhớ được cấp phát nếu fail, NULL nếu success.
+>- Giá trị khởi tạo: là 0.
+
+Hiệu suất của **malloc** sẽ nhanh hơn **calloc** vì ngoài việc cấp phát vùng nhớ giống **malloc** thì **calloc** còn phải gán cho các phần tử của vùng nhớ vừa cấp phát giá trị là 0.
+Muốn sử dụng calloc hay malloc thì tùy vào người dùng nếu không care tới value của vùng nhớ cấp phát thì use **malloc**, còn nếu muốn all có value bằng 0 thì mình dùng **calloc**.
 #### - **Stack**:
+-  Khác với Heap thì Stack là một vùng nhớ được cấp phát tự động 
+- Mỗi khi các function được gọi thì nó sẽ được push vào vùng stack.
