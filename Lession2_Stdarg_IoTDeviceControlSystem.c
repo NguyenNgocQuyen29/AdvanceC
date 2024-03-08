@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
-#include "IoTDeviceControlSystem.h"
+#include "Lession2_Stdarg_IoTDeviceControlSystem.h"
 
 int main(){
     Process(LIGHT, ON);
