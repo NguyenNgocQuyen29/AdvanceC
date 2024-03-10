@@ -59,3 +59,25 @@ Muốn sử dụng calloc hay malloc thì tùy vào người dùng nếu không 
 -  Khác với Heap thì Stack là một vùng nhớ được cấp phát tự động 
 - Mỗi khi các function được gọi thì nó sẽ được push vào vùng stack.
 ## **LESSION 5: EXTERN - STATIC - VOLATILE - REGISTER**
+### EXTERN ###
+- Dùng để tham chiếu một biến, hàm có cùng name đã được định nghĩa ở nơi khác.
+- Khai báo thôi chứ không định nghĩa, biến được kêu ra phải là biến toàn cục của file khác.
+### STATIC ###
+#### Static với biến cục bộ #### 
+- Một biến được khai báo(định nghĩa hay không định nghĩa) thì nó sẽ bị thu hồi vùng nhớ sau khi ra hỏi hàm. Muốn giữ giá trị của nó không bị mất khi ra khỏi hàm thì dùng từ khóa **Static**.
+
+Ví dụ nếu không dùng biến static:
+ 
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/fd25bd89-17b3-44ad-a9d5-521031dc7fab)            ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/a567a788-8c2a-497a-b739-b6c818cb3a3c)
+
+               
+Ví dụ nếu dùng biến static:
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/8ba48217-1993-4adc-b449-0c11dfe0608d)            ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/103c348a-60ff-48bd-a61a-4185ca616ded)
+
+#### Static với biến toàn cục và hàm: ####
+- Dùng được trong chương trình không cho bên ngoài dùng kể cả **EXTERN.**
+
+  
+### VOLATILE ###
+### REGISTER ###
