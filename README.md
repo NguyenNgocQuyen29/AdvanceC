@@ -1,5 +1,4 @@
-#  **Ngọc Quyên**
-Below is the place to store about C/C++ programming language that I learned.
+# ADVANCE C
 ---
 
 ## **LESSION 1: Compiler - Macro**
@@ -77,7 +76,99 @@ Ví dụ nếu dùng biến static:
 
 #### Static với biến toàn cục và hàm: ####
 - Dùng được trong chương trình không cho bên ngoài dùng kể cả **EXTERN.**
-
-  
 ### VOLATILE ###
 ### REGISTER ###
+## **LESSION 5: GOTO - setjmp**
+*Goto* là một từ khóa trong ngôn ngữ lập trình C cho phép người dùng nhảy đến một label đã được đặt trước đó trong cùng một. Không được khuyến khích dùng vì nó làm cho chương trình trở nên khó đọc và bảo trì. 
+>- Ví dụ về từ khóa *go to*
+
+                            #include <stdio.h>
+                            void delay(double second)
+                            {
+                                double start = 0;
+                                while (start < second * 6000000)
+                                {
+                                    start++;
+                                }
+                            }
+                            // Khai báo các trạng thái đèn giao thông
+                            typedef enum //1 thời điểm chỉ có 1 đèn để 
+                            {
+                                RED,
+                                YELLOW,
+                                GREEN
+                            } TrafficLightState;
+                            int main() {
+                                // Ban đầu, đèn giao thông ở trạng thái đỏ
+                                TrafficLightState state = RED;
+                            
+                                // Vòng lặp vô hạn để mô phỏng đèn giao thông
+                                while (1) {
+                                    switch (state) {
+                                        case RED:
+                                            printf("RED Light\n");
+                                            delay(50);  // Giữ trạng thái đèn đỏ trong x giây
+                                            
+                                            // Chuyển đến trạng thái đèn xanh
+                                            state = GREEN;
+                                            goto skip_sleep;  // Nhảy qua sleep() khi chuyển trạng thái
+                                        case YELLOW:
+                                            printf("YELLOW Light\n");
+                                            delay(20);  // Giữ trạng thái đèn vàng trong y giây
+                                            
+                                            // Chuyển đến trạng thái đèn đỏ
+                                            state = RED;
+                                            goto skip_sleep;  // Nhảy qua sleep() khi chuyển trạng thái
+                                        case GREEN:
+                                            printf("GREEN Light\n");
+                                            delay(100);  // Giữ trạng thái đèn xanh trong z giây
+                                            
+                                            // Chuyển đến trạng thái đèn vàng
+                                            state = YELLOW;
+                                            goto skip_sleep;  // Nhảy qua sleep() khi chuyển trạng thái
+                                    }
+                                    // Nhãn để nhảy qua sleep() khi chuyển trạng thái
+                                    skip_sleep:;
+                                }
+                                return 0;
+                            }
+
+ >- Trong ví dụ trên trạng thái đèn đỏ đầu tiên, khi chờ khoảng 50s thì trạng thái đèn xanh, nó sẽ thoát ra khỏi switch và bắt đầu switch case khác vì nó đã dùng label skip_Spleep (cái này được đặt ngoài hàm nên nôn na sẽ thoát khỏi hàm, lần lượt chuyển sang đèn khác thứ tự là **ĐỎ - XANH - VÀNG**
+*Setjmp.h* là một thư viện trong ngôn ngữ lập trình C cung cấp 2 hàm là *setjmp* và *longjmp* dùng để xử lí ngoại lệ trong( nó không tiêu biểu để xử lí ngoại lệ trong ngôn ngữ này).
+>- Ví dụ về *Setjmp.h*
+
+                       #include <stdio.h>
+                       #include <setjmp.h>
+                       
+                       jmp_buf buf;
+                       int exception_code;
+                       
+                       #define TRY if ((exception_code = setjmp(buf)) == 0) 
+                       #define CATCH(x) else if (exception_code == (x)) 
+                       #define THROW(x) longjmp(buf, (x))
+                       
+                       
+                       double divide(int a, int b) {
+                           if (b == 0) {
+                               THROW(1); // Mã lỗi 1 cho lỗi chia cho 0
+                           }
+                           return (double)a / b;
+                       }
+                       
+                       int main() {
+                           int a = 10;
+                           int b = 0;
+                           double result = 0.0;
+                       
+                           TRY {
+                               result = divide(a, b);
+                               printf("Result: %f\n", result);
+                           } CATCH(1) {
+                               printf("Error: Divide by 0!\n");
+                           }
+                       
+                       
+                           // Các xử lý khác của chương trình
+                           return 0;
+                       }
+
