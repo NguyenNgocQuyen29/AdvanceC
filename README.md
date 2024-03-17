@@ -3,6 +3,20 @@
 
 ## **LESSION 1: Compiler - Macro**
 ## **LESSION 2: STDARG - ASSERT**
+Thư viện Stdarg cung cấp các phương thức làm việc với các input parameter không xác định. Ví dụ điển hình là *scanf*,*printf*
+Các tham số:
+   + va_list:là một kiểu dữ liệu để đại diện cho danh sách các đối số biến đổi.
+   + va_start: Bắt đầu một danh sách đối số biến đổi. Nó cần được gọi trước khi truy cập các đối số biến đổi đầu tiên.
+   + va_arg: Truy cập một đối số trong danh sách. Hàm này nhận một đối số của kiểu được xác định bởi tham số thứ .
+   + va_end: Kết thúc việc sử dụng danh sách đối số biến đổi. Nó cần được gọi trước khi kết thúc hàm.
+
+Thư viện Assert
+   + Cung cấp macro assert. 
+   + Macro này được sử dụng để kiểm tra một điều kiện. 
+   + Nếu điều kiện đúng (true), không có gì xảy ra và chương trình tiếp tục thực thi.
+   + Nếu điều kiện sai (false), chương trình dừng lại và thông báo một thông điệp lỗi.
+   + Dùng trong debug, dùng #define NDEBUG để tắt debug
+
 ## **LESSION 3: POINTER**
 ## **LESSION 4: MEMORY LAYOUT**
  **Mục đích bài học:** Cách tổ chức và phân bổ đóng vai trò quan trọng trong việc thực thi một chương trình. Hiểu được nó thì ta sẽ có nền tảng trong việc lập trình.
