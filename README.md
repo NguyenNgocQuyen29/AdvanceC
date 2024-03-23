@@ -200,4 +200,20 @@ Ví dụ nếu dùng biến static:
   * Thường ta sẽ bù bit 0 nhưng khi dịch phải có 1 lưu ý đó là: phải chú ý đến bit cao nhất(bit dấu).
   * Bit dấu: nếu bit max là 1 thì đó là số âm nên khi dịch phải mình bù vào số 1.
   * Còn nếu là số dương (bit dấu = 0) thì khi dịch phải truyền vào số 0.
- 
+
+## **LESSION 7: Struct - Union ** 
+## **LESSION 8: JSON **
+JSON được thiết kế để dễ đọc và dễ viết cho con người, cũng như dễ dàng để phân tích và tạo ra cho máy tính. Nó sử dụng một cú pháp nhẹ dựa trên cặp key - value, tương tự như các đối tượng và mảng trong JavaScript. Mỗi đối tượng JSON bao gồm một tập hợp các cặp "key" và "value", trong khi mỗi mảng JSON là một tập hợp các giá trị.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d07554e4-417f-46d6-a95b-e2ec7cc5d5fd)
+
+Có 6 loại định dạng trong JSON: *NULL, NUMBER, ARRAY, STRING, BOOLEAN, OBJECT.*
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/aafc3aad-85d5-49ec-97c3-a840059f4e96)
+
+**một object có thể co nhiều key-value**
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1963a8cf-ce0e-485d-92b3-487d9b8ef317)
+
+## **LESSION 9: LINKED LIST **
+
+
+
