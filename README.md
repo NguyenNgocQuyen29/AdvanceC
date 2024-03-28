@@ -318,6 +318,20 @@ Cả 2 đều là kiểu dữ liệu do người dùng tự định nghĩa.
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/19805161-8c72-4e19-836c-5e420ae13620)
 
+## **Câu 5: Con trỏ là gì và kích thước của con trỏ, con trỏ hàm, con trỏ void, con trỏ null, pointer to pointer**
+
+- Con trỏ: là biến lưu giá trị, mà giá trị đó là địa chỉ của đối tượng khác (***chú ý: không được kêu là con trỏ là biến lưu địa chỉ của biến khác tại vì hàm,mảng cũng có địa chỉ***).
+- Kích thước của con trỏ phụ thuộc vào kiến trúc của vi xử lí (vxl 8 bit thì kích thước con trỏ 1 byte, 32bit là 4 byte, 64bit là 8 byte).
+- Con trỏ hàm: là con trỏ lưu địa chỉ của một hàm.
+- Con trỏ null: là con trỏ mà nó không trỏ tới một đối tượng hay vùng nhớ nào.
+- Con trỏ voil: là con trỏ trỏ tới vùng nhớ không có kiểu dữ liệu.
+- Pointer to Pointer: là con trỏ lưu địa chỉ của con trỏ khác.
+
+## **Câu 6: Biến REGISTER VÀ VOLATILE**
+
+REGISTER:
+VOLATILE:
+
 </p>
 
 </details>
