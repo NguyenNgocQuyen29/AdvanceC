@@ -1,8 +1,15 @@
 # ADVANCE C
 ---
 
-## **LESSION 1: Compiler - Macro**
-## **LESSION 2: STDARG - ASSERT**
+<details><summary>LESSON 1: Compiler - Macro</summary>
+</p>
+
+</p>
+
+</details>
+
+<details><summary>LESSION 2: STDARG - ASSERT</summary>
+</p>
 Thư viện Stdarg cung cấp các phương thức làm việc với các input parameter không xác định. Ví dụ điển hình là *scanf*,*printf*
 Các tham số:
    + va_list:là một kiểu dữ liệu để đại diện cho danh sách các đối số biến đổi.
@@ -16,9 +23,20 @@ Thư viện Assert
    + Nếu điều kiện đúng (true), không có gì xảy ra và chương trình tiếp tục thực thi.
    + Nếu điều kiện sai (false), chương trình dừng lại và thông báo một thông điệp lỗi.
    + Dùng trong debug, dùng #define NDEBUG để tắt debug
+</p>
 
-## **LESSION 3: POINTER**
-## **LESSION 4: MEMORY LAYOUT**
+</details>
+
+<details><summary>LESSON 3: POINTER</summary>
+</p>
+
+</p>
+
+</details>
+
+<details><summary>LESSON 4: MEMORY LAYOUT</summary>
+</p>
+   
  **Mục đích bài học:** Cách tổ chức và phân bổ đóng vai trò quan trọng trong việc thực thi một chương trình. Hiểu được nó thì ta sẽ có nền tảng trong việc lập trình.
 
  In C programming language, **the memory layout** consists of the following sections:
@@ -92,7 +110,13 @@ Ví dụ nếu dùng biến static:
 - Dùng được trong chương trình không cho bên ngoài dùng kể cả **EXTERN.**
 ### VOLATILE ###
 ### REGISTER ###
-## **LESSION 5: GOTO - setjmp**
+
+</p>
+
+</details>
+
+<details><summary>LESSON 5: GOTO - SETJMP</summary>
+</p>
 *Goto* là một từ khóa trong ngôn ngữ lập trình C cho phép người dùng nhảy đến một label đã được đặt trước đó trong cùng một. Không được khuyến khích dùng vì nó làm cho chương trình trở nên khó đọc và bảo trì. 
 >- Ví dụ về từ khóa *go to*
 
@@ -185,8 +209,13 @@ Ví dụ nếu dùng biến static:
                            // Các xử lý khác của chương trình
                            return 0;
                        }
+</p>
 
-## **LESSION 6: BITMASK**
+</details>
+
+<details><summary>LESSON 6: BITMASK</summary>
+</p>
+   
 Được sử dụng để tối ưu hóa bộ nhớ.
 
 - NOT biswise: Khi thực hiện phép toán này thì kết quả của nó là đão của nó. Ví dụ: 1 not bitwise được kết quả là 0
@@ -213,7 +242,12 @@ Có 6 loại định dạng trong JSON: *NULL, NUMBER, ARRAY, STRING, BOOLEAN, O
 **một object có thể co nhiều key-value**
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1963a8cf-ce0e-485d-92b3-487d9b8ef317)
 
-## **LESSION 9: LINKED LIST**
+</p>
+
+</details>
+
+<details><summary>LESSON 9: LINKED LIST</summary>
+</p>
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0153edae-9d15-4b48-be4c-f4ba1b1950a4)
 
@@ -239,5 +273,51 @@ Tương tự ví dụ:
 
 =>Muốn xóa một phần tử tại vị trí bất kì ta chỉ cần gì note của phần tử đó vào node của phần tử đứng trước đó(tương đương với ghi địa chỉ của phần tử tiếp theo vào vị trí của phần tử đứng trước đó vì note của phần tử đó lưu địa chỉ của phần tử đứng sau)
 
+</p>
 
+</details>
 
+<details><summary>TEST KIẾN THỨC</summary>
+</p>
+   
+## **Câu 1: Sự khác nhau giữa MACRO và FUNCTION**
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1ad5ec14-7d7e-4547-9a31-5f275a982c1a)
+
+## **Câu 2: Các phân vùng nhớ trên RAM và đặc tính của từng phân vùng**
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c6bc84e5-6159-4a0b-b006-24a33a6af604)
+
+Có 5 phân vùng nhớ trêm RAM (MEMORY LAYOUT):
++ Text: - ở phân vùng này chứa các mã thực thi.
+        - chứa các biến con trỏ kiểu char hoặc các const.
+        - Quyền truy cập: các biến mà lưu ở vùng này chỉ phép được đọc chứ không được ghi.
+  
++ Ininitalized data(Data): - vùng này chứa các biến toàn cục or static đã được khai báo với giá trị khác 0
+                           - Quyền truy cập: có thể đọc và ghi.
+                           - Các biến sẽ được thu hồi khi chương trình kết thúc.
+
++ Uninitalized data(BSS):  - vùng này chứa các biến toàn cục or static khai báo với giá trị bằng 0 hoặc chưa gán giá trị.
+                           - Quyền truy cập: có thể được đọc và ghi.
+  
++ Heap: - Sử dụng để cấp phát bộ nhớ trong quá trình thực thi chương trình.
+        - Cho phép chương trình tạo ra và giải phòng bộ nhớ theo nhu cầu, thích ứng với sự biến đổi của dữ liệu trong quá trình chạy.
+        - Các hàm: malloc(), calloc() dùng để cấp phát động, hàm realloc(), free() để giải phóng bộ nhớ.
+  
++ Stack: - chứa các biến cục bộ, các tham số truyền vào hàm.
+         - Quyền truy cập: có thể được đọc và ghi.
+         - Sau khi ra khỏi hàm sẽ tự động thu hồi vùng nhớ.
+
+## **Câu 3: Biến STATIC toàn cục và cục bộ**
+**Static toàn cục(GLOBAL)**: bình thường biến toàn cục có thể được dùng ở file khác dùng các pp như include,extern. Nhưng nếu chỉ muốn biến toàn cục đó dùng trong file hiện tại thôi thì mình sẽ dùng nó chung với từ khóa STATIC. 
+
+**Static cục bộ(LOCAL)**: bình thường một biến cục bộ(nằm trong stack) thì nó sẽ bị thu hồi vùng nhớ khi ra khỏi hàm. Biến static cục bộ nghĩa là khi được khai báo thì biến nó tồn tại trong suốt thời gian thực thi chương trình nhưng chỉ được thực thi trong hàm chứa nó thôi.
+
+## **Câu 4: So sánh Struc và Union**
+Cả 2 đều là kiểu dữ liệu do người dùng tự định nghĩa.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/19805161-8c72-4e19-836c-5e420ae13620)
+
+</p>
+
+</details>
