@@ -329,8 +329,16 @@ Cả 2 đều là kiểu dữ liệu do người dùng tự định nghĩa.
 
 ## **Câu 6: Biến REGISTER VÀ VOLATILE**
 
-REGISTER:
-VOLATILE:
+**REGISTER**:Trong khi các biến khai báo trong chương trình thì đặt ở bộ nhớ ngoài (RAM chẳng hạn …). Do đó với khai báo biến thông thường, để thực hiện một phép tính thì cần có 3 bước.
+ + Nạp giá trị từ vùng nhớ chứa biến vào 
+ + Yêu cầu ALU xử lý register vừa được nạp giá trị.
+ + Đưa kết quả vừa xử lý của ALU ra ngoài vùng nhớ chứa biến.
+Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yêu cầu trình biên dịch ưu tiên đặc biệt dành luôn vùng register để chứa biến đó. Và hiển nhiên khi thực hiện tính toán trên biến đó thì giảm được bước 1 và 3, giảm bớt thủ tục vậy nên hiệu năng tăng lên.
+  
+**VOLATILE**: Một biến cần được khai báo dưới dạng biến volatile khi nào? Khi mà giá trị của nó có thể thay đổi một cách không báo trước. Việc khai báo biến volatile là rất cần thiết để tránh những lỗi sai khó phát hiện do tính năng optimization của compiler. 3 ví dụ trong thực tế nên dùng biến volatile
+ + Memory-mapped peripheral registers (thanh ghi ngoại vi có ánh xạ đến ô nhớ)
+ + Biến toàn cục được truy xuất từ các tiến trình con xử lý ngắt (interrupt service routine)
+ + Biến toàn cục được truy xuất từ nhiều tác vụ trong một ứng dụng đa luồng.
 
 </p>
 
