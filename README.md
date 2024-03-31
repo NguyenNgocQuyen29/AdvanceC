@@ -344,4 +344,12 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
 
 </details>
 
+
+<details><summary>MỘT SỐ THUẬT TOÁN HAY</summary>
+</p>
+
+</p>
+
+</details>
+
 # ADVANCE C++
