@@ -353,3 +353,20 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
 </details>
 
 # ADVANCE C++
+
+<details><summary>LESSION 13: CLASS</summary>
+</p>
+
+Trong C++, từ khóa 'class' dùng để định nghĩa một lớp, là một cấu trúc dữ liệu tự định nghĩa có thể chứa dữ liệu và các hàm thành viên liên quan.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d8327aae-3ff8-4bb8-bc0d-848d89e9d27f)
+
+- Declaring Object
+
+  ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/f5ed4cdc-a743-435c-89b5-375f1e8112c3)
+
+
+
+</p>
+
+</details>
