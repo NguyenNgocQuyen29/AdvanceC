@@ -348,6 +348,17 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
 <details><summary>MỘT SỐ THUẬT TOÁN HAY</summary>
 </p>
 
+## Câu 1: Tìm giá trị Max của 2 số mà không dùng if else, switch case, toán tử 3 ngôi, toán tử so sánh.
+printf("%d" , (a+b+abs(a-b))/2);
+
+## Câu 2: Một số thuật toán sắp xếp
+Sắp xết chọn(Selection Sort)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/febde365-f6f9-4446-8daa-37a6909708c9)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/a96c19dd-e3b3-4335-bc47-0492be6886a1)
+
+
 </p>
 
 </details>
@@ -361,11 +372,34 @@ Trong C++, từ khóa 'class' dùng để định nghĩa một lớp, là một 
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d8327aae-3ff8-4bb8-bc0d-848d89e9d27f)
 
+Trong C++ thì các biến(variable) gọi là property, các hàm(function) gọi là method
+
 - Declaring Object
 
   ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/f5ed4cdc-a743-435c-89b5-375f1e8112c3)
 
+- Contructor trong C++ là một method sẽ được tự động gọi khi object được tạo ra. Constructor sẽ có tên trùng với tên của class.
+- Deconstructor trong C++ là một method sẽ được tự động gọi khi object được giải phóng. Deconstructor có tên trùng với tên của class , thêm ~ ở trước tên.
 
+***Static Keyword***:
+- Nếu như một property được khai báo với từ khóa static thì các object trong class sẽ dùng chung địa chỉ vơi property này.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/331ff9b4-7d0b-4ca8-b4d6-856dc11c5f8b)
+
+Output của chương trình trên:
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/470af029-a2cd-46a2-9246-a42ab3d8a4eb)
+
+Các object trong class dùng biến var thì sẽ có chung địa chỉ.
+
+- Nếu như một method được khai báo với từ khóa static:
+ >- Method này độc lập với bất kỳ đối tượng nào của lớp.
+ >- Method này có thể được gọi ngay cả khi không có đối tượng nào của class tồn tại.
+ >- Method này có thể được truy cập bằng cách sử dụng tên class thông qua toán tử :: .
+ >- Method này có thể truy cập các static property và các static method bên trong hoặc bên ngoài class.
+ >- Method có phạm vi bên trong class và không thể truy cập con trỏ đối tượng hiện tại.
+
+## Binary Search ##
 
 </p>
 
