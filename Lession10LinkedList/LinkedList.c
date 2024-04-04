@@ -86,7 +86,7 @@ void pop_back(node** array){
     }
     temp = p->next; //p->next is address of the last node
     p->next = NULL; //p->next is next of the previois last node.
-    free(p);
+    free(temp);
 }
 /*
 * Fuction: pop_font
