@@ -404,3 +404,22 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 </p>
 
 </details>
+
+<details><summary>LESSION 14: OOP</summary>
+</p>
+
+*https://www.youtube.com/watch?v=wN0x9eZLix4&list=PLWKjhJtqVAbmUE5IqyfGYEYjrZBYzaT4m&index=5*
+### Encapsulation
+
+- Tính đóng gói: ẩn đi các property mật. Để làm được điều này ta khai báo ở chế độ *private*
+- Purpose: Prevent anyone or anything outside of our class to be able directly access,interact,modify with our data(không phải là don't want to acess our data at all ->dont want that to happen directly) - want to access thì access into public :).
+- **How do access encapsulated properties of a class**? =>through its method.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/aa2e6dc5-8f7f-4c74-a1cd-d767fbaac9ba)
+
+Ví dụ: Các property Name,Company,Age là private. Muốn access nó thì phải access thông qua các methor set hoặc set của nó được để ở public.
+
+### Abstraction
+- Tính trừu tượng: ẩn đi các chi tiết cụ thể của một đối tượng và chỉ hiển thị những thứ cần thiết của đối tượng đó.
+- Ví dụ: chiếc điện thoại của bạn bạn chỉ quan tâm là muốn chụp một bức ảnh thì đơn giản mở ứng dụng chụp ảnh và nhấn vào nút chụp, nhưng để làm được điều đó thì sâu bên trong chiếc điện thoại thì nó không đơn giản như thế. Nhưng chúng ta là người sử dụng thì không cần biết những cái đó làm gì chỉ cần sử dụng nó được rồi.
+- 
