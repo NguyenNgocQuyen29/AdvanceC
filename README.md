@@ -347,6 +347,10 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
 
 <details><summary>MỘT SỐ THUẬT TOÁN HAY</summary>
 </p>
+Số âm & Số dương:
+
+   ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/fca931ea-0af4-4271-a004-401f1c6aff48)
+
 
 ## Câu 1: Tìm giá trị Max của 2 số mà không dùng if else, switch case, toán tử 3 ngôi, toán tử so sánh.
 printf("%d" , (a+b+abs(a-b))/2);
