@@ -30,6 +30,19 @@ Thư viện Assert
 <details><summary>LESSON 3: POINTER</summary>
 </p>
 
+### Introduction to Pointer in C
+Pointer is the variable that store address of another object.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/68cbf054-eb00-4e7b-a7d7-9d988eb7d704)
+
+Ví dụ: một con trỏ P lưu địa chỉ của biến a. Khi đó p = &a 
+*Khai báo con trỏ*: datatype *ptr;. Khi gọi p tức là con trỏ , nó lưu địa chỉ của biến a nên giá trị của con trỏ là địa chỉ của biến a(p = &a), còn muốn lấy giá trị của biến a thì dùng *ptr.
+
+
+
+
+
+
 </p>
 
 </details>
@@ -89,7 +102,13 @@ Muốn sử dụng calloc hay malloc thì tùy vào người dùng nếu không 
 #### - **Stack**:
 -  Khác với Heap thì Stack là một vùng nhớ được cấp phát tự động 
 - Mỗi khi các function được gọi thì nó sẽ được push vào vùng stack.
-## **LESSION 5: EXTERN - STATIC - VOLATILE - REGISTER**
+
+</p>
+
+</details>
+<details><summary>LESSION 5: EXTERN - STATIC - VOLATILE - REGISTER</summary>
+</p>
+
 ### EXTERN ###
 - Dùng để tham chiếu một biến, hàm có cùng name đã được định nghĩa ở nơi khác.
 - Khai báo thôi chứ không định nghĩa, biến được kêu ra phải là biến toàn cục của file khác.
@@ -115,7 +134,7 @@ Ví dụ nếu dùng biến static:
 
 </details>
 
-<details><summary>LESSON 5: GOTO - SETJMP</summary>
+<details><summary>LESSON 6: GOTO - SETJMP</summary>
 </p>
 *Goto* là một từ khóa trong ngôn ngữ lập trình C cho phép người dùng nhảy đến một label đã được đặt trước đó trong cùng một. Không được khuyến khích dùng vì nó làm cho chương trình trở nên khó đọc và bảo trì. 
 >- Ví dụ về từ khóa *go to*
@@ -213,7 +232,7 @@ Ví dụ nếu dùng biến static:
 
 </details>
 
-<details><summary>LESSON 6: BITMASK</summary>
+<details><summary>LESSON 7: BITMASK</summary>
 </p>
    
 Được sử dụng để tối ưu hóa bộ nhớ.
@@ -230,8 +249,8 @@ Ví dụ nếu dùng biến static:
   * Bit dấu: nếu bit max là 1 thì đó là số âm nên khi dịch phải mình bù vào số 1.
   * Còn nếu là số dương (bit dấu = 0) thì khi dịch phải truyền vào số 0.
 
-## **LESSION 7: Struct - Union** 
-## **LESSION 8: JSON**
+## **LESSION 8: Struct - Union** 
+## **LESSION 9: JSON**
 JSON được thiết kế để dễ đọc và dễ viết cho con người, cũng như dễ dàng để phân tích và tạo ra cho máy tính. Nó sử dụng một cú pháp nhẹ dựa trên cặp key - value, tương tự như các đối tượng và mảng trong JavaScript. Mỗi đối tượng JSON bao gồm một tập hợp các cặp "key" và "value", trong khi mỗi mảng JSON là một tập hợp các giá trị.
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d07554e4-417f-46d6-a95b-e2ec7cc5d5fd)
@@ -246,7 +265,7 @@ Có 6 loại định dạng trong JSON: *NULL, NUMBER, ARRAY, STRING, BOOLEAN, O
 
 </details>
 
-<details><summary>LESSON 9: LINKED LIST</summary>
+<details><summary>LESSON 10: LINKED LIST</summary>
 </p>
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0153edae-9d15-4b48-be4c-f4ba1b1950a4)
