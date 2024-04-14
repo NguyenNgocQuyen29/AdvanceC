@@ -38,8 +38,53 @@ Pointer is the variable that store address of another object.
 Ví dụ: một con trỏ P lưu địa chỉ của biến a. Khi đó p = &a 
 *Khai báo con trỏ*: datatype *ptr;. Khi gọi p tức là con trỏ , nó lưu địa chỉ của biến a nên giá trị của con trỏ là địa chỉ của biến a(p = &a), còn muốn lấy giá trị của biến a thì dùng *ptr.
 
+### Working with Pointer
+1.
+Ta có thể thay đổi giá trị của một biến thông qua con trỏ. Bằng cách trỏ tới địa chỉ của biến đó và thay đổi giá trị tay địa chỉ của biến.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3616c1d7-6ef9-4f67-a509-b0d0c143cca3)
 
 
+Ở ví dụ này tôi đã trỏ tới địa chỉ của biến a và change value of a variable. The new value of a variable is 20. Tôi chỉ thay đổi giá trị tại vùng địa chỉ mà con trỏ trỏ tới chứ không thay đổi địa chỉ nên output của chương trình địa chỉ của a vẫn không thay đổi 
+=> Out put của chương trình:
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c07632fa-ddc2-4bd7-91b4-eb616b3a5c27)
+
+2. Pointer Arithmetic
+Giả sử địa chỉ của biến a là 2002 thì p+1 = ? Có phải là 2003 không?
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/10b8bfa7-6e79-4151-94f3-56463dec17fa)
+
+Câu trả lời là không nhé. Bởi vì p là một con trỏ kiểu interger thì khi tăng nó lên 1 tức là đi tới địa chỉ của integer tiếp theo. Bởi vì size của integer là 4 byte nên go to the next integer, nghĩa là we need to skip four. Tức là p + 1 = 2002 + 4 = 2006.
+
+3. Void Pointer 
+Void Pointer: là con trỏ trỏ tới địa chỉ bất kì mà không cần biết kiểu dữ liệu của nó. Chúng ta chỉ được lưu địa chỉ của đối tượng khác vào con trỏ void chứ không xem được giá trị tại địa chỉ mà nó trỏ tơi
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/ee7a2725-7895-484d-b8dc-36cf4fbb52a6)
+
+=> Dòng *p0, p0+1 sẽ lỗi, tại vì con trỏ void nó không có kiểu dữ liệu nên ta không thể lấy giá trị tại địa chỉ như này, còn p0+1 thì bản chất nó là trỏ tới địa chỉ tiếp theo, tức là cộng thêm kích thước của 1 con trỏ mà này kểu void->nó không có kiểu dữ liệu nên chúng ta không thể tính toán được địa chỉ. 
+***=>Không thể lấy giá trị or địa chỉ tiếp theo khi dùng con trỏ void***
+4. Pointer to Pointer
+Là con trỏ lưu địa chỉ của con trỏ khác
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/cc6195d8-c200-4905-b557-2e340dcbc985)
+
+Trong ví dụ này: q chính là con trỏ cấp 2.
+
+*Cách nhớ:* 
+
+            + int : khai báo biển có kiểu dử liệu là integer
+
+            + int* : khai báo con trỏ lưu địa chỉ của biến
+            
+            + int**: khai báo con trỏ để lưu địa chỉ của con trỏ.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0ffabc9e-2796-4dbb-9d34-1247638bad54)
+
+=> Muốn thay đổi giá trị của a mình chỉ cần gán: ***r = 10; output a = 10;
+                                                 **q = *q + 2; output a = 12;
+
+5. Pointers as function arguments - Call by Reference
 
 
 
