@@ -433,6 +433,15 @@ Sắp xết chọn(Selection Sort)
 
 # ADVANCE C++
 
+<details><summary>LESSION: Linh tinh</summary>
+</p>
+   
+**1. Câu lệnh để nhận dữ liệu trên 1 dòng:** ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/a68fc70c-d085-4c3b-8868-9a201455572d)
+
+
+
+</p>
+</details>
 <details><summary>LESSION 13: CLASS</summary>
 </p>
 
@@ -469,12 +478,12 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 
 ## Binary Search ##
 
-</p>
+[</p>
 
 </details>
 
 <details><summary>LESSION 14: OOP</summary>
-</p>
+</p>](https://www.youtube.com/watch?v=8jLOx1hD3_o&t=43089s)
 
 *https://www.youtube.com/watch?v=wN0x9eZLix4&list=PLWKjhJtqVAbmUE5IqyfGYEYjrZBYzaT4m&index=5*
 ### Encapsulation
