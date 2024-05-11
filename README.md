@@ -489,9 +489,13 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c998396a-c9e7-412e-80ab-9e71fe0b6691)
 
+*Có 3 loại Constructor: default constructor, copy constructor, *
+
 #### 2. How to Constructor Overloading
 The process of declaring multiple constructors with same  name but different parameters is known as xonstructor .
 => Destructor ko overloading tại vì trong 1 class chỉ có 1 destructor.
+#### 3. Default copy constructor
+Dùng để khai báo một đối tượng với một đối tượng khác cùng loại 
 
 </p>
 
