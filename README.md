@@ -496,6 +496,19 @@ The process of declaring multiple constructors with same  name but different par
 => Destructor ko overloading tại vì trong 1 class chỉ có 1 destructor.
 #### 3. Default copy constructor
 Dùng để khai báo một đối tượng với một đối tượng khác cùng loại 
+### 4. Static Data Member & Static member function
++ Static Data Memmber: Chỉ được sử dụng trong class nhưng thời gian tồn tại của nó thì là suốt chương trình, kể cả khi không có đối tượng được khởi tạo thì nó cũng sẻ tồn tại
++ Static member function: chỉ truy cập đươc bởi các đối tượng trong class.
+
+### 5. Friend Function & Class Function
+- Friend Function của một class được định nghĩa bên ngoài class nhưng mà nó thể truy cập được tất cả thuộc tính bên trong class kể cả private and protected.
+- Frined không phải là member function của class. Vs dụ:
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/fd147721-0b80-48b3-824f-30947a8fcd89)
+
+- Friend class cũng được khai báo như là friend của một class
+
+### 6. Operator Overloading
 
 </p>
 
