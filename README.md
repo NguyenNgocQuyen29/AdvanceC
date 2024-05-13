@@ -496,11 +496,11 @@ The process of declaring multiple constructors with same  name but different par
 => Destructor ko overloading tại vì trong 1 class chỉ có 1 destructor.
 #### 3. Default copy constructor
 Dùng để khai báo một đối tượng với một đối tượng khác cùng loại 
-### 4. Static Data Member & Static member function
+#### 4. Static Data Member & Static member function
 + Static Data Memmber: Chỉ được sử dụng trong class nhưng thời gian tồn tại của nó thì là suốt chương trình, kể cả khi không có đối tượng được khởi tạo thì nó cũng sẻ tồn tại
 + Static member function: chỉ truy cập đươc bởi các đối tượng trong class.
 
-### 5. Friend Function & Class Function
+#### 5. Friend Function & Class Function
 - Friend Function của một class được định nghĩa bên ngoài class nhưng mà nó thể truy cập được tất cả thuộc tính bên trong class kể cả private and protected.
 - Frined không phải là member function của class. Vs dụ:
 
@@ -508,7 +508,28 @@ Dùng để khai báo một đối tượng với một đối tượng khác c�
 
 - Friend class cũng được khai báo như là friend của một class
 
-### 6. Operator Overloading
+### 6. OOP1. Inheritance
+
+- Inheritance(tính kế thừa): là khả năng sử dụng các thuộc tính của lớp khác
+- Class cho kế thừa gọi là Parent or Base or Super Class, còn những class đi sử dụng properties của class khác gọi là Child, Derived or Sub Class.
+- Tất cả các member của class có thể được kế thứa (except Private).
+
+*Type of Inheritance*
+- Single Inheritance
+- Multiple Inheritance
+- Hierarchical Inheritance
+- Multilevel Inheritance
+- Hybrid Inherutance
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/b823fda0-1f0c-4f33-b38f-65133527acee)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/df623960-b78f-4cc3-9f62-88aba57531de)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1b4bb8c3-223f-4e5d-b69b-ab3b1783d84c)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0c7e8277-6563-4dcf-9512-a4c3d66b3a59)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/e388052d-77b8-46a1-afb7-80bac39b0dfa)
 
 </p>
 
