@@ -570,3 +570,37 @@ Specializing maximum for const char*: độ dài chuỗi kí tự
 
 </p>
 </details>
+
+# V models
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/b14f85cc-9791-4e94-8f7b-357abad8195e)
+
+***Quy trình phát triển phần mềm:***
+*Requirement:*
+   - Thu thập yêu cầu từ khách hàng(đọc kỹ mô tả và các yêu cầu của task).
+   - Phân tích tính năng cụ thể.
+
+*Requirement Analysis:*
+   - Phân tích cụ thể yêu cầu, hiểu những gì mình phải phát triển.
+   - Xác dịnh rủi ro , yêu cu bổ sung nếu cần thiết.
+
+(Liệt kê ra những điều mình biết và chưa biết, ước chừng thời gian để mình thực hiện)
+*Design*
+- Viết chương trình (build được, ko có lỗi và fix các warning).
+- Test Planning: ở trên thì mới viết chương trình nó chạy được thôi nhưng chưa chắc đúng, ở bước này xây dựng sản phẩm dựa trên quy trình thiết kế 
+
+*Development*
+- Phát triển sản phẩm
+
+*Unit Test*
+- Test từng module
+
+*Integration Test*
+- Gôp các module lại vầ Test tính năng hoàn chỉnh để xem nó thực hiện theo luồng hay không.
+
+*System Test*
+**
+
+
+
+
