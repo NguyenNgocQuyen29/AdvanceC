@@ -404,6 +404,11 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
  + Biến toàn cục được truy xuất từ các tiến trình con xử lý ngắt (interrupt service routine)
  + Biến toàn cục được truy xuất từ nhiều tác vụ trong một ứng dụng đa luồng.
 
+## Câu 7: Khác nhau giữa struct và class trong c++
+1. Member của Class mặc định là private, còn của Structe mặc định là public
+2. Cái instance sử dụng class gọi là object, đối với structure gọi là biến.
+3. Class dùng để đóng gói dữ liệu hoặc kế thừa còn struct dùng để group các kiểu dữ liệu lại
+4. Trong class có thể có giá trị NULL,còn trong struct không thể có giá trị null.
 </p>
 
 </details>
@@ -530,6 +535,23 @@ Dùng để khai báo một đối tượng với một đối tượng khác c�
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0c7e8277-6563-4dcf-9512-a4c3d66b3a59)
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/e388052d-77b8-46a1-afb7-80bac39b0dfa)
+
+### 7. OOP2. Encapsulation in C++
+Nó được định nghĩa như là đóng gói dữ liệu và thông tin thành một đơn vị duy nhất,chúng được định nghĩa là định nghĩa là liên kết dữ liẹu và các chứng năng với  nhau.
+
+***Ví dụ***: Một công ty sẽ có nhũng team tài chính, sale, account,..... Mỗi bộ phận này sẽ xử lí những dữ liệu liên quan tới bộ phận của họ và họ phải lưu cái records lại. Vì một số lí do nào đó có thể team sales cần hồ sơ của team tài chính. Thì team sales không thể trực tiếp truy cập vào dữ liệu của team tài chính được mà phải gửi yêu cầu để nhân viên bên team sales đóng gỏi dữ liệu và gửi yêu cầu cho team tài chính
+
+*Two important property of Encapsulation*
++ Data protection: bảo vệ dữ bằng cách giữ cho dữ liệu private, cái việc truy cập và chỉnh sửa dữ liệu nó sẽ bị hạn chế hơn so với những hàm public.
++ Information Hiding: ẩn đi những chi tiết triển khai nội bộ trong hàm chỉ có những cái public mới có thể truy cập.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/61a7877f-cb14-44e0-be19-c54cec2b3935)
+
+Encapsulation nó cũng dẫn đến tính trừu tượng của dữ liệu,nó sẽ ẩn đi những dữ liệu.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/ecaeb1fa-63d7-47f4-bfa1-a34485fd675e)
+
+Trong ví dụ bên dưới: age là private. Biến này nó được truy cập thông qua hàm getAge() và setAge() , 2 hàm được dùng bên trong class. Trong ví dụ này biến x, 2 hàm kia liên kết với nhau không có gì khác ngoài sự Encapsulation.
 
 </p>
 
