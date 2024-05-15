@@ -553,6 +553,31 @@ Encapsulation nó cũng dẫn đến tính trừu tượng của dữ liệu,nó
 
 Trong ví dụ bên dưới: age là private. Biến này nó được truy cập thông qua hàm getAge() và setAge() , 2 hàm được dùng bên trong class. Trong ví dụ này biến x, 2 hàm kia liên kết với nhau không có gì khác ngoài sự Encapsulation.
 
+### 8. OOP 3: Abstraction
+Abstaction: có nghĩa là sẽ trưng bày những thông tin cần thiết và ẩn đi chi tiết. 
+Ví dụ: chúng ta chỉ biết là khi nhấn ga thì xe chạy nhanh còn bóp thắng thì xe dừng lại. Nhưng chúng ta không hề biết khi nhấn ga thì tốc độ nó tăng như nào hoặc cơ cấu cơ khi để giảm phanh như nào. Đây chính là trừu tượng. 
+Có 2 loại trừu tượng:
++ Data Abstraction: Chỉ hiển thị những thoong tin yêu cầu về dữ liệu và ẩn đi những thông tin cần thiết.
++ Control Construction: Hiển thị những thông tin yêu cầu về việc thực hiện cụ thể(cái ẩn đi của cái kia) và ẩn đi những thông tin không cần thiết.
+
+***Khác nhua giữa Encapsulation và Abstaction***:
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3a075966-76d0-4747-a6e5-107f1f054a43)
+
+### 9. OOP: Polymorphism
+Polymorphism là một trong những tính năng quan trọng của C++. Polymorphism có nghĩa là nó có nhiều forms(hình thức). Là một đối tượng nhưng thực hiện những hành vi khác nhau trong những trường hợp khác nhau. 
+Ví dụ: cùng 1 người nhưng tại một thời điểm họ có thể là con của một ai đó, học sinh của trường nào đó hay ứng cử viên tham gia cuộc phỏng vấn nào đó.
+Có 2 loại Polymorphism:
++ Compiler-time
++ Runtime
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3b24cd0a-a5ef-469f-85bd-9a55dbbab310)
+
+1. Compyler-time
+
+Cái loại đa hình này có thể đạt được bằng cách nạp chồng hàm hoặc nạp chồng toán tử.
+- Overloading Function: có nhiều hàm có cùng tên nhưng khác paramater hoặc các loại parameter được biết như là overloading functions.
+- 
 </p>
 
 </details>
