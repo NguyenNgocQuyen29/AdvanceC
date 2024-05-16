@@ -575,9 +575,11 @@ Có 2 loại Polymorphism:
 
 1. Compyler-time
 
-Cái loại đa hình này có thể đạt được bằng cách nạp chồng hàm hoặc nạp chồng toán tử.
-- Overloading Function: có nhiều hàm có cùng tên nhưng khác paramater hoặc các loại parameter được biết như là overloading functions.
-- 
+***Sực khác nhau giữa Inheritance và Polymorphism***:
+1. Inheritance là một class mới được tạo ra kế thừa những tính năng của class hiện tại, trong khi đó polymorphism là cái mà nó có thể được định nghĩa dưới nhiều hình thức.
+2. Inheritance thường ap dụng cho nhiều lớp, còn Polymorphism thường áp dụng cho hàm hoặc method.
+3. Inhertitance hổ trợ việc tái sử dụng và giảm thiểu chiều dài của code trong hướng đối tượng, tình đa hình cho phép đối tượng quyết định cái form nào của function được thực hiện.
+4. Inheritance có thể là single, hybrid, multiple, hierarchical, multilevel inheritance. Còn polymorphism có thể là compiler-time polymorphism cũng như run time polymorphism 
 </p>
 
 </details>
