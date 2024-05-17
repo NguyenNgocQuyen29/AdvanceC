@@ -14,6 +14,17 @@ void print_array(int a[], int n) {
 		cout << a[i] << " ";
 	}
 }
+/*
+* Function: findDistinguish
+* Decription: this fuction to find distinguish elements in array
+* Input:
+*	a[] - array need to find distinguish elements
+*	b[] - array contains distinguish elements
+*	n - number elements in array in array a
+*   m - number distinguish elements in array b
+* Output:
+*	none return
+*/
 void findDistinguish(int a[], int b[], int n, int &m) {
 	m = 0;
 	b[m] = a[0];//the first distinguish element
@@ -34,6 +45,17 @@ void findDistinguish(int a[], int b[], int n, int &m) {
 		}
 	}
 }
+/*
+* Function: count
+* Description: this function to find the number of occurrences of elements
+* Input:
+*	a[] - array need to find distinguish elements
+*	b[] - array contains distinguish elements
+*	n - number elements in array in array a
+*   m - number distinguish elements in array b
+* Output:
+*	none return
+*/
 void count(int a[], int b[], int n, int &m) {
 	findDistinguish(a, b, n, m);
 	for (int j = 0; j < m; j++) {
@@ -47,9 +69,6 @@ void count(int a[], int b[], int n, int &m) {
 		cout << "Elements " << b[j] << " appear " << dem << " time";
 	}
 }
-
-
-
 int main() {
 	int m, n, a[MAX], b[MAX];
 	/*cout << "enter number elements of array: ";
