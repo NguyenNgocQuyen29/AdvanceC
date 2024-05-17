@@ -343,11 +343,18 @@ Tương tự ví dụ:
 
 <details><summary>TEST KIẾN THỨC</summary>
 </p>
-   
-## **Câu 1: Sự khác nhau giữa MACRO và FUNCTION**
+
+***Interview Buổi 1***: 17/05/2024 ~ Cố lên Quyên ơi ~
+PHÂN VÙNG NHỚNHỚ
+## **Câu 1: Sự khác nhau giữa MACRO và FUNCTION và INLINE FUNCTION**
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1ad5ec14-7d7e-4547-9a31-5f275a982c1a)
 
++ Macro: được xử lí bởi preprocessor, nó đơn giản chỉ là thay thế đoạn code vào chỗ được gọi trước khi biên dịch.
++ Function: được xử lí bởi compiler, khi hàm được gọi thì nó sẽ lưu địa chỉ hiện tại vào stack, rồi nhảy đến hàm được gọi thực hiện và nhận kết quả return, sau đỏ quay lại vị trí trong stack để tiếp tục thực hiện chương trình.
++ Inline: thay thế đoạn mã đã được biên dịch vào chỗ được gọi.
++ Tốc độ: ***Macro > Inline > Function***. Macro thời gian chạy nhanh vì được xử lí ở preprocessor. Inline và hàm tuy đều được xử lí bởi compiler nhưng mà inline nó thay thế đoạn code luôn không cần lưu địa chỉ giống hàm.
++ Kích thước: ***Macro > Inline > Function***. Tại vì hàm chỉ được được dùng mỗi khi gọi thôi.
 ## **Câu 2: Các phân vùng nhớ trên RAM và đặc tính của từng phân vùng**
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c6bc84e5-6159-4a0b-b006-24a33a6af604)
@@ -372,26 +379,29 @@ Có 5 phân vùng nhớ trêm RAM (MEMORY LAYOUT):
          - Quyền truy cập: có thể được đọc và ghi.
          - Sau khi ra khỏi hàm sẽ tự động thu hồi vùng nhớ.
 
-## **Câu 3: Biến STATIC toàn cục và cục bộ**
+## Câu 3: So sánh Array và con trỏ mảng
+- Khi khai báo một mảng thì cho dù mảng đó ở đâu đi chăng nửa thì cũng nằm ở trong 3 vùng đó là Data,BSS,Stack (nếu mảng toàn cục gán giá trị thì ở data, toàn cục chưa khai báo giá trị thì ở bss, hay cục bộ or truyền vào hàm thì cũng nằm ở stack) cả 3 vùng này đều có thể đọc và ghi.
+
+- Con trỏ kiểu char (hay các const): nằm ở vùng text nên chỉ có quyền được đọc , không có quyền được ghi.
+
+## Câu 4: So sánh Malloc và Calloc. Khi nào sử dụng?
+## Câu 5: cho đoạn code:
+         int main(int argc, char const *argc[]){
+               uint32_t var = 0x01049832;
+               (uint8_t)var = ?;
+         }
+
+Đáp án:
+
+Giải thích:
+
+STORAGE CLASSES
+## **Câu 1: Biến STATIC**
 **Static toàn cục(GLOBAL)**: bình thường biến toàn cục có thể được dùng ở file khác dùng các pp như include,extern. Nhưng nếu chỉ muốn biến toàn cục đó dùng trong file hiện tại thôi thì mình sẽ dùng nó chung với từ khóa STATIC. 
 
 **Static cục bộ(LOCAL)**: bình thường một biến cục bộ(nằm trong stack) thì nó sẽ bị thu hồi vùng nhớ khi ra khỏi hàm. Biến static cục bộ nghĩa là khi được khai báo thì biến nó tồn tại trong suốt thời gian thực thi chương trình nhưng chỉ được thực thi trong hàm chứa nó thôi.
 
-## **Câu 4: So sánh Struc và Union**
-Cả 2 đều là kiểu dữ liệu do người dùng tự định nghĩa.
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/19805161-8c72-4e19-836c-5e420ae13620)
-
-## **Câu 5: Con trỏ là gì và kích thước của con trỏ, con trỏ hàm, con trỏ void, con trỏ null, pointer to pointer**
-
-- Con trỏ: là biến lưu giá trị, mà giá trị đó là địa chỉ của đối tượng khác (***chú ý: không được kêu là con trỏ là biến lưu địa chỉ của biến khác tại vì hàm,mảng cũng có địa chỉ***).
-- Kích thước của con trỏ phụ thuộc vào kiến trúc của vi xử lí (vxl 8 bit thì kích thước con trỏ 1 byte, 32bit là 4 byte, 64bit là 8 byte).
-- Con trỏ hàm: là con trỏ lưu địa chỉ của một hàm.
-- Con trỏ null: là con trỏ mà nó không trỏ tới một đối tượng hay vùng nhớ nào.
-- Con trỏ voil: là con trỏ trỏ tới vùng nhớ không có kiểu dữ liệu.
-- Pointer to Pointer: là con trỏ lưu địa chỉ của con trỏ khác.
-
-## **Câu 6: Biến REGISTER VÀ VOLATILE**
+## **Câu 2: Biến REGISTER VÀ VOLATILE**
 
 **REGISTER**:Trong khi các biến khai báo trong chương trình thì đặt ở bộ nhớ ngoài (RAM chẳng hạn …). Do đó với khai báo biến thông thường, để thực hiện một phép tính thì cần có 3 bước.
  + Nạp giá trị từ vùng nhớ chứa biến vào 
@@ -404,11 +414,6 @@ Khi thêm từ khóa register để khai báo biến, thì tức là ta đã yê
  + Biến toàn cục được truy xuất từ các tiến trình con xử lý ngắt (interrupt service routine)
  + Biến toàn cục được truy xuất từ nhiều tác vụ trong một ứng dụng đa luồng.
 
-## Câu 7: Khác nhau giữa struct và class trong c++
-1. Member của Class mặc định là private, còn của Structe mặc định là public
-2. Cái instance sử dụng class gọi là object, đối với structure gọi là biến.
-3. Class dùng để đóng gói dữ liệu hoặc kế thừa còn struct dùng để group các kiểu dữ liệu lại
-4. Trong class có thể có giá trị NULL,còn trong struct không thể có giá trị null.
 </p>
 
 </details>
