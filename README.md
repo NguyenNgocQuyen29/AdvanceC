@@ -385,15 +385,28 @@ Có 5 phân vùng nhớ trêm RAM (MEMORY LAYOUT):
 - Con trỏ kiểu char (hay các const): nằm ở vùng text nên chỉ có quyền được đọc , không có quyền được ghi.
 
 ## Câu 4: So sánh Malloc và Calloc. Khi nào sử dụng?
+Maloc: - cấp phát một vùng nhớ với kích thước là size
+       - tham số truyền vào là 1
+       - Giá trị khởi tạo là rác
+
+Calloc: - cấp phát vùng nhớ gồm ***num*** phần tử, một phần tử có kích thước là size.
+        - tham số truyền vào là 2
+        - giá trị khởi tạo là 2
+
+Sử dụng: 
+      + Malloc: khi tính toán được kích thước của vùng nhờ cần cấp, khi không quan tâm đến giá trị của vùng nhớ cần khởi tạo thì dùng malloc.
+      + Calloc: chỉ cần nhập vào số lượng phần tử và kích thước của mỗi phần tử thì calloc sẽ tự tính toán và cấp phát bộ nhớ cần thiết, khi muốn giá trị mặc định của vùng nhớ cần tạo bằng 0 thì dùng calloc.
+
+Tốc độ: malloc sẽ nhanh hơn vì calloc nó tốn thời gian để khởi tạo giá trị mặc định của các vùng nhớ = 0.
 ## Câu 5: cho đoạn code:
          int main(int argc, char const *argc[]){
                uint32_t var = 0x01049832;
                (uint8_t)var = ?;
          }
 
-Đáp án:
+Đáp án: 32
 
-Giải thích:
+Giải thích:uint8_t chỉ lưu trữ được giá trị 8bit thôi.
 
 STORAGE CLASSES
 ## **Câu 1: Biến STATIC**
