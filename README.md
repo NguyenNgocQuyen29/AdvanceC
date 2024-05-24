@@ -535,69 +535,24 @@ Có  2 loại polimorphism
 1. Vitual Function cann't be static and also cann't be a friend function of another class.
 2. A class can have virutal destructor but can't have vitual constructor.
 3. There are two types of vitual function in C++
+   
          + Vitual Function
+   
          + Pure Vitual Function
+
+   ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/7ab1b262-3dfa-437e-b5b6-eb5586d1e466)
+
+
 </p>
 </details>
 
-
-<details><summary>LESSION15: LAMDA FUNCTION</summary>
+<details><summary>LESSION15: MULTITHREADING</summary>
 </p>
-Là một cơ chế để thiết lập những hàm vô danh(không có tên). Khi chúng được thiết lập chúng ta có thể gọi nó, hoặc làm bất cứ cái gì một cách trực tiếp với nó.
+
+
+<details><summary>V models</summary>
+</p>
    
-*Lamda Function signature:* [capture] (parameters) -> return type {};
-
-**Parameter**
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d29ded15-1435-4d5c-af76-00fbea7e7761)
-
-Output: 17.8, có thể gọi landa function bằng cách gán cho nó một cái name.
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/58963200-221e-4550-a6a4-4b76f49830f0)
-
-có thể truyền tham số trực tiếp vào lamda.
-
-**Capture list**
-- Capture list trong lamda funtion như copy giá trị khai báo bên ngoài vào vậy. Nghĩa là  trong [] chúng ta chỉ có thể pass vào nó các trường hợp sau, ***nó không được khai báo trực tiếp bên trong []***
-   - [] : không giữ biến nào.
-   - [val]: giá trị cuẩ biến.
-   - [&val]: tham chiếu của biến.
-   - [=]: tất cả giá trị của biến.
-   - [&]: tất cả tham chiếu của biến.
- </p>
-</details>
-
-<details><summary>LESSION16: FUNCTION TEMPLATE</summary>
-</p>
-Trong C++, function templates là một tính năng mạnh mẽ giúp việc các function và class chung sử dụng cho nhiều kiểu dữ liệu mà không cần phải triển khai nhiều phiên bản của function hoặc class.
-Như hình nếu mình có 10 hoặc 20 hàm như này thì phải viết ra như vậy sao như thế rất tệ => cần có function templates.  
-   
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/f339caef-6680-4240-bd64-40a5cda8bdb2)
-
-Khai báo một template:
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/99f93acf-0d75-4b7a-93d3-be6053b77c04)
-
-Ví dụ:
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/69224cee-3f79-4ee6-9e2f-7a7a265b5745)
-
-### 1. Template parameter by reference
-Nhìn đoạn code này ta thật sự thấy thì nó chỉ truyền vào tham trị
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/9d067a5d-947e-4661-a00e-5d9de3a268b4)
-
-Nếu muốn truyền vào tham chiếu thì ta thêm &
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3e5c685e-49a1-4e0d-9f74-fd62f8ee9939)
-
-### 2. Template Specialazion
-Specializing maximum for const char*: độ dài chuỗi kí tự
-
-
-</p>
-</details>
-
-# V models
 
 ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/b14f85cc-9791-4e94-8f7b-357abad8195e)
 
@@ -627,6 +582,8 @@ Specializing maximum for const char*: độ dài chuỗi kí tự
 *System Test*
 **
 
+</p>
+</details>
 
 
 
