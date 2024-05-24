@@ -507,99 +507,37 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 
 <details><summary>LESSION 14: OOP</summary>
 </p>
-   
-#### 1. Passing Object as Function Argument
 
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c998396a-c9e7-412e-80ab-9e71fe0b6691)
+ ### OOP1. Inheritance
+ Nó kế thừa tính năng của một lớp khác
+ Nó bao gồm các loại:
+          - Single: A derived class with only base class is called inheritence.
+          - Multilevel: A derived class with a base class and that base class is derived class of another 
+          - Multiple: A dirived classes with multiple base class. 
+          - Heritical:  Multiple dirived classes with same base class.
+          - Hybrid: kết hợp Multiple và Heritical
+          - Multipath: a derived class with two base class and two base class have one common base class.
 
-*Có 3 loại Constructor: default constructor, copy constructor, *
+Mode of inheritance:
++ public( visible to everyone)
++ protected ( visible to current class and derived class only)
++ private ( visible to current class only).
 
-#### 2. How to Constructor Overloading
-The process of declaring multiple constructors with same  name but different parameters is known as xonstructor .
-=> Destructor ko overloading tại vì trong 1 class chỉ có 1 destructor.
-#### 3. Default copy constructor
-Dùng để khai báo một đối tượng với một đối tượng khác cùng loại 
-#### 4. Static Data Member & Static member function
-+ Static Data Memmber: Chỉ được sử dụng trong class nhưng thời gian tồn tại của nó thì là suốt chương trình, kể cả khi không có đối tượng được khởi tạo thì nó cũng sẻ tồn tại
-+ Static member function: chỉ truy cập đươc bởi các đối tượng trong class.
-
-#### 5. Friend Function & Class Function
-- Friend Function của một class được định nghĩa bên ngoài class nhưng mà nó thể truy cập được tất cả thuộc tính bên trong class kể cả private and protected.
-- Frined không phải là member function của class. Vs dụ:
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/fd147721-0b80-48b3-824f-30947a8fcd89)
-
-- Friend class cũng được khai báo như là friend của một class
-
-### 6. OOP1. Inheritance
-
-- Inheritance(tính kế thừa): là khả năng sử dụng các thuộc tính của lớp khác
-- Class cho kế thừa gọi là Parent or Base or Super Class, còn những class đi sử dụng properties của class khác gọi là Child, Derived or Sub Class.
-- Tất cả các member của class có thể được kế thứa (except Private).
-
-*Type of Inheritance*
-- Single Inheritance
-- Multiple Inheritance
-- Hierarchical Inheritance
-- Multilevel Inheritance
-- Hybrid Inherutance
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/b823fda0-1f0c-4f33-b38f-65133527acee)
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/df623960-b78f-4cc3-9f62-88aba57531de)
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/1b4bb8c3-223f-4e5d-b69b-ab3b1783d84c)
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/0c7e8277-6563-4dcf-9512-a4c3d66b3a59)
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/e388052d-77b8-46a1-afb7-80bac39b0dfa)
-
-### 7. OOP2. Encapsulation in C++
-Nó được định nghĩa như là đóng gói dữ liệu và thông tin thành một đơn vị duy nhất,chúng được định nghĩa là định nghĩa là liên kết dữ liẹu và các chứng năng với  nhau.
-
-***Ví dụ***: Một công ty sẽ có nhũng team tài chính, sale, account,..... Mỗi bộ phận này sẽ xử lí những dữ liệu liên quan tới bộ phận của họ và họ phải lưu cái records lại. Vì một số lí do nào đó có thể team sales cần hồ sơ của team tài chính. Thì team sales không thể trực tiếp truy cập vào dữ liệu của team tài chính được mà phải gửi yêu cầu để nhân viên bên team sales đóng gỏi dữ liệu và gửi yêu cầu cho team tài chính
-
-*Two important property of Encapsulation*
-+ Data protection: bảo vệ dữ bằng cách giữ cho dữ liệu private, cái việc truy cập và chỉnh sửa dữ liệu nó sẽ bị hạn chế hơn so với những hàm public.
-+ Information Hiding: ẩn đi những chi tiết triển khai nội bộ trong hàm chỉ có những cái public mới có thể truy cập.
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/61a7877f-cb14-44e0-be19-c54cec2b3935)
-
-Encapsulation nó cũng dẫn đến tính trừu tượng của dữ liệu,nó sẽ ẩn đi những dữ liệu.
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/ecaeb1fa-63d7-47f4-bfa1-a34485fd675e)
-
-Trong ví dụ bên dưới: age là private. Biến này nó được truy cập thông qua hàm getAge() và setAge() , 2 hàm được dùng bên trong class. Trong ví dụ này biến x, 2 hàm kia liên kết với nhau không có gì khác ngoài sự Encapsulation.
-
-### 8. OOP 3: Abstraction
-Abstaction: có nghĩa là sẽ trưng bày những thông tin cần thiết và ẩn đi chi tiết. 
-Ví dụ: chúng ta chỉ biết là khi nhấn ga thì xe chạy nhanh còn bóp thắng thì xe dừng lại. Nhưng chúng ta không hề biết khi nhấn ga thì tốc độ nó tăng như nào hoặc cơ cấu cơ khi để giảm phanh như nào. Đây chính là trừu tượng. 
-Có 2 loại trừu tượng:
-+ Data Abstraction: Chỉ hiển thị những thoong tin yêu cầu về dữ liệu và ẩn đi những thông tin cần thiết.
-+ Control Construction: Hiển thị những thông tin yêu cầu về việc thực hiện cụ thể(cái ẩn đi của cái kia) và ẩn đi những thông tin không cần thiết.
-
-***Khác nhua giữa Encapsulation và Abstaction***:
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3a075966-76d0-4747-a6e5-107f1f054a43)
-
-### 9. OOP: Polymorphism
-Polymorphism là một trong những tính năng quan trọng của C++. Polymorphism có nghĩa là nó có nhiều forms(hình thức). Là một đối tượng nhưng thực hiện những hành vi khác nhau trong những trường hợp khác nhau. 
-Ví dụ: cùng 1 người nhưng tại một thời điểm họ có thể là con của một ai đó, học sinh của trường nào đó hay ứng cử viên tham gia cuộc phỏng vấn nào đó.
-Có 2 loại Polymorphism:
-+ Compiler-time
-+ Runtime
-
-![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/3b24cd0a-a5ef-469f-85bd-9a55dbbab310)
-
-1. Compyler-time
-
-***Sực khác nhau giữa Inheritance và Polymorphism***:
-1. Inheritance là một class mới được tạo ra kế thừa những tính năng của class hiện tại, trong khi đó polymorphism là cái mà nó có thể được định nghĩa dưới nhiều hình thức.
-2. Inheritance thường ap dụng cho nhiều lớp, còn Polymorphism thường áp dụng cho hàm hoặc method.
-3. Inhertitance hổ trợ việc tái sử dụng và giảm thiểu chiều dài của code trong hướng đối tượng, tình đa hình cho phép đối tượng quyết định cái form nào của function được thực hiện.
-4. Inheritance có thể là single, hybrid, multiple, hierarchical, multilevel inheritance. Còn polymorphism có thể là compiler-time polymorphism cũng như run time polymorphism 
+### OOP. Polimorphism
+Có  2 loại polimorphism
+- Compiler Time Polimorphism
+  + Function Overloading
+  + Operator Overloading
+- Runtime Polimorphism
+  + function overriding (using virtual functions)
+ 
+**Vitual Function**
+1. Vitual Function cann't be static and also cann't be a friend function of another class.
+2. A class can have virutal destructor but can't have vitual constructor.
+3. There are two types of vitual function in C++
+         + Vitual Function
+         + Pure Vitual Function
 </p>
-
 </details>
 
 
