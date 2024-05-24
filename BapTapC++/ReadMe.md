@@ -36,8 +36,15 @@ Một số cấu trúc dữ liệu điển hình:
 ## Bài 3: Thuật toán tìm kiếm Nhị  (Linear Search)
 ## Bài 4: Thuật toán sắp xếp chèn (Insertion Sort)
 ## Bài 5: Thuật toán sắp xếp chọn (Selection Sort)
-Tìm phần tử nhỏ nhất so với vị trí của chỉ số i hiện tại, sau đó hoán đổi vị 
-Sau n-1 bước sẽ kiếm được, tại vị thằng cuối cùng k cần 
+Duyệt 2 vòng lặp:
++ Vòng lặp 1:
+            - duyệt từ phần tử index = 1, duyệt hết mảng sẽ tìm được phần tử nhỏ nhất
+  
+            - Swap phần tử đó về vị trí đầu.
+  
++ Vòng lặp 2:
+            - đã có vị trí index = 0, giờ thì duyệt từ index = 2 trở về sau để swap với index = 1
+            - cứ như vậy
 ## Bài 6: Thuật toán sắp xếp nổi bọt (Bubble Sort)
 + So sánh 2 phần tử kề nhau,nếu chúng sắp xếo không đúng chỗ thì hoán đổi vị trị
       for j = i to n
