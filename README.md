@@ -562,6 +562,16 @@ Nếu muốn đọc hoặc ghi các properties này thì ta cấp các method �
 
   ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/936429f1-3a69-4ff6-a0d9-ff2dea0032bf)
 
+  ### OOP4. Abstraction
+  Tính trưu tượng là ẩn đi các chi tiết cụ thể và chi trưng bày những gì cần thiết để sử dụng đối tượng.
+  - Ví dụ: một class có các property private là các hệ số của ptrinh bậc 2 và cách tính nghiêm của  phương trình bậc 2.
+  - Những cái này sẽ đươhc ẩn đi, và trưng bày nhưunxg thông tin cần thiết ví dụ như: method điền các hệ số a,b,c và in ra kết quả
+
+    ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/c2e189c4-1cdb-4662-b635-17300a7d197b)
+
+    ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/d98fb677-5cc4-4b84-9f55-f49e1a8e355a)
+
+
 </p>
 </details>
 
