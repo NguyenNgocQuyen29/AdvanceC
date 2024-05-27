@@ -509,8 +509,13 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 </p>
 
  ### OOP1. Inheritance
- Nó kế thừa tính năng của một lớp khác
- Nó bao gồm các loại:
+ - Nó kế thừa tính năng của một lớp khác, sử dụng các property và method của class, để kế thừa ta dùng
+
+ - Class cho kế thừa gọi là class cha, còn class được kế thừa gọi là class con.
+
+ - Class con có theer truy cập các thuộc tính của class chả kể cả private và protected.
+   
+ - Nó bao gồm các loại:
           - Single: A derived class with only base class is called inheritence.
           - Multilevel: A derived class with a base class and that base class is derived class of another 
           - Multiple: A dirived classes with multiple base class. 
@@ -522,6 +527,12 @@ Mode of inheritance:
 + public( visible to everyone)
 + protected ( visible to current class and derived class only)
 + private ( visible to current class only).
+
+- Ví dụ: mình có 1 class Person có các đặc điểm như tên, tuổi ,địa chỉ nhà, Một class Student kế thừa từ class Person , class này vừa có đặc tính của class cha và vừa có những đăc tính riêng của nó như tên trường, GPA, ID. Tức là class kế thừa gồm các đặc tính từ lớp nó kế thừa và những đặc tính riêng nữa. 
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/9130de02-e454-44a3-8d90-c1a3bd4b1988)  ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/4b603d3f-b3a4-4916-9363-390ae547f7c7)
+
+
 
 ### OOP. Polimorphism
 Có  2 loại polimorphism
@@ -542,6 +553,14 @@ Có  2 loại polimorphism
 
    ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/7ab1b262-3dfa-437e-b5b6-eb5586d1e466)
 
+### OOP3. Encapsulation
+Là ẩn đi các properties mật khỏi người dùng, các properties này sẽ được cấp quyền truy cập là private.
+Nếu muốn đọc hoặc ghi các properties này thì ta cấp các method ở public.
+
+- Ví dụ: một class có các properties ở chế độ bảo vật như: tên sinh viên, điểm. mã số SV.
+- Muốn ghi hoặc đọc các properties này thì chúng ta sẽ tạo ra các method để thao tác hoặc các constructor.
+
+  ![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/936429f1-3a69-4ff6-a0d9-ff2dea0032bf)
 
 </p>
 </details>
