@@ -523,8 +523,18 @@ OOP
   + Đa hình động: function overriding
 
   => Đa hình tĩnh không thực hiện được tính đa hình thông qua kế thừa. Còn đa hình động có thể thực hiện đa hình thông qua kế thừa (overriding, ví dụ: có 1 class con kế thừa từ class cha, class cha có 1 hàm sum rồi, class con cũng có thể định nghĩa lại 1 hàm sum khác 1 lần nữa)
-
 ***=> Tính đa hình chủ yếu dùng cho các method, tính kế thừa dùng cho các class***
+
+#### Câu 1: Có 2 class B,C kế thừa từ class A, class D kế thừa từ class B,C có được không?
+Câu trả lời là được, đó là 1 loại của kế thừa: Mutipath Inheritance.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/5608640a-1f35-4597-ac59-195e6cbed849)
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/5b053567-45aa-4e9a-95a0-94945571bbef)
+
+- Tại sao có thể truy cập trực tiếp các method nhưng method display phải dùng thêm class , ví class D kế thừa từ B,C (directly) từ A(indirectly), cả 3 class này đều có method display(), nên nếu chỉ ghi là m.display() thì complier sẽ không biết mình đang invoke cái method nào.
+
+
  ### OOP1. Inheritance
  - Nó kế thừa tính năng của một lớp khác, sử dụng các property và method của class, để kế thừa ta dùng
 
