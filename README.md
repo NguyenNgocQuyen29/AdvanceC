@@ -507,7 +507,24 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
 
 <details><summary>LESSION 14: OOP</summary>
 </p>
+OOP
++ Tình đóng gói:ẩn đi property mật khỏi người dùng ở chế độ private, muốn đọc ghi thì phải truy cập các method ở quyền public
+   
++ Tính trừu tượng: ẩn đi các cái chi tiết và chỉ trưng bài nhưng cái cần thiết. Ví dụ: giải nghiệm phương trình bậc 2, thì khai báo biến và giải chi tiêst sẽ được ẩn đi ở private và ở public chỉ trưng bày những method ví dụ như truyền vào các hệ số của chương trình bậc 2, và print ra nghiệm của pt bậc 2.
+***=> Tính đóng gói ẩn đi để bảo vệ dử liệu, còn tính trừu tượng ẩn đi cái không cần thiết.***
+- Những vấn đề ở trính đóng gói giải quyền bằng cách thao tác giữa các cái method ở public, còn trừu tượng thì giải quyết ở những cái trưng bày lên.
 
++ Tính kế thừa: một lớp mà sử dụng lại các property của một lớp khác gọi là kế thừa. Ví dụ code: một class Person có các đặc tính như: tên, tuổi ,quê quán. Một class Student kế thừa từ class này ngoài có những đặc điểm riêng như: tên trường, MSSV, GPA thì nó còn có những property của lớp cha mà nó kế thừa.
+  
++ Tính đa hình: tức là một lúc có thể thực hiện nhiều form. Nó sử dụng các class được kế thừa để sử dụgn nhiều tác vụ khác nhau.
+  Ví dụ: trong 1 class , có nhiều hàm summ, ham thì truyền vào 2 tham số, có hàm truyền vào tham số....
+  Đa hình: có 2 loại đa hình tĩnh(compiler time) và đa hình động (runtime)
+  + Đa hình tĩnh: function overloading và operator overloading
+  + Đa hình động: function overriding
+
+  => Đa hình tĩnh không thực hiện được tính đa hình thông qua kế thừa. Còn đa hình động có thể thực hiện đa hình thông qua kế thừa (overriding, ví dụ: có 1 class con kế thừa từ class cha, class cha có 1 hàm sum rồi, class con cũng có thể định nghĩa lại 1 hàm sum khác 1 lần nữa)
+
+***=> Tính đa hình chủ yếu dùng cho các method, tính kế thừa dùng cho các class***
  ### OOP1. Inheritance
  - Nó kế thừa tính năng của một lớp khác, sử dụng các property và method của class, để kế thừa ta dùng
 
@@ -543,11 +560,16 @@ Có  2 loại polimorphism
   + function overriding (using virtual functions)
  
 **Vitual Function**
-1. Vitual Function cann't be static and also cann't be a friend function of another class.
+1. Vitual Function cann't be static and also can be a friend function of another class.
 2. A class can have virutal destructor but can't have vitual constructor.
-3. There are two types of vitual function in C++
+3. Cấc hàm ảo phải được truy cập bằng con trỏ hoặc tham chiếu lớp cơ sở mới đạt được tính đa hình khi chay.
+
+![image](https://github.com/NguyenNgocQuyen29/AdvanceC/assets/124705679/9227809c-e7a1-465a-9e10-e8c6024a9c1e)
+
    
-         + Vitual Function
+5. There are two types of vitual function in C++
+   
+         + Vitual Function: hàm ảo là hàm đã được khai báo ở lớp  và được định nghĩa lại ở lớp con.
    
          + Pure Vitual Function
 
