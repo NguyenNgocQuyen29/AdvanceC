@@ -607,6 +607,27 @@ Nếu muốn đọc hoặc ghi các properties này thì ta cấp các method �
 </p>
 </details>
 
+<details><summary>LESSION15: STL</summary>
+</p>
+
+STL - Standard Template Library là một thư viện trong ngôn ngữ lập trình C++ cung cấp một số tập hợp các template classes và function để  thực hiện các cấu trúc dữ liệu và một số thuật toán phổ biến.
+Một số thành phần chính của STL:
++ Container
++ Iterator
++ Algorithms
++ Funtor
+
+**Container** là một cấu trúc dữ liệu chứa nhiều phần tử theo một cách cụ thể . Một số container tiêu biểu:
+- Vector
+- Map
+- List
+- Array
+
+*Vector* là một trong những container quan trọng nhất của C++. Nó cấp một mảng động với khả năng thay đổi kích thước một cách linh hoạt.
+
+<details><summary>V models</summary>
+</p>
+
 <details><summary>LESSION15: MULTITHREADING</summary>
 </p>
 
