@@ -499,7 +499,11 @@ Các object trong class dùng biến var thì sẽ có chung địa chỉ.
  >- Method này có thể truy cập các static property và các static method bên trong hoặc bên ngoài class.
  >- Method có phạm vi bên trong class và không thể truy cập con trỏ đối tượng hiện tại.
 
-## Binary Search ##
+**2. Trong ngôn ngữ lập trình C++ muốn khai báo 2 hàm, 2 class or 2 biến có cùng tên được không? Nếu có thì dùng kỹ thuật gì?**
+Có thể, trong ngôn ngữ lập trình C++ muốn khai báo các biến, hàm,class có cùng tên nhưng không bị xung đột thì có thể sử dụng namespace .
+=> Các phần khác nhau của chương trình sử dụng cùng 1 tên cho các đối tượng khác nhau thì namsepace nó sẽ giúp cho phép biến tổ chức một cách rỏ ràng và không bị xung đột.
+Bằng cách sử dụng cú pháp Namespace::, bạn có thể chỉ rõ namespace mà bạn muốn sử dụng.
+
 
 [</p>
 
