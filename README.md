@@ -629,12 +629,15 @@ Một số thành phần chính của STL:
 
 *Vector* là một trong những container quan trọng nhất của C++. Nó cấp một mảng động với khả năng thay đổi kích thước một cách linh hoạt.
 
-<details><summary>V models</summary>
-</p>
 
-<details><summary>LESSION15: MULTITHREADING</summary>
+<details><summary>LESSION15: Smart Pointer</summary>
 </p>
-
+Trong C++, Smart Pointer là một cơ chế quản lí bộ nhớ động, giúp giảm thiểu rủi ro liên quan tới quản lí bộ nhớ và giúp người lập trình tránh việc quên giải phóng bộ nhớ được cấp phát. 
+Nó đảm bảo rằng đối tượng sẽ được xóa nếu không được sử dụng.
+Có 3 loại Smart Pointer
++ uique_ptr
++ shared_ptr
++ weak_
 
 <details><summary>V models</summary>
 </p>
